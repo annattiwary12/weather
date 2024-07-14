@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="header">
+        <h4>The.Weather</h4>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">The.Weather</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Forecast</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="split left">
+            <div class="centered">
+                <h2>Today's Weather</h2>
+                <p>City: <span id="city-name">City not found</span></p>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Condition: <span id="condition"></span></p>
+                <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                <h2>Search Weather</h2>
+                <form id="weather-form">
+                    <div class="form-group">
+                        <label for="city-input">City:</label>
+                        <input type="text" class="form-control" id="city-input" placeholder="Enter city name">
+                    </div>
+                    <button type="submit" class="btn btn-default">Get Forecast</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/App.js"></script>
+</body>
+</html>
